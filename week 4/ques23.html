@@ -1,0 +1,74 @@
+<html>
+<head>
+    <title>ex3 related</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .card{
+             width: 30%;
+             padding: 2px;
+             position: relative;
+             box-shadow: 2px 2px 4px rgb(9, 9, 128);
+             background-color: rgb(219, 180, 130);
+        }
+        .card > img{
+               width: 100%;
+             
+        }
+        .desc{
+            padding:10px;
+        }
+        .desc > h2  {
+            color: rgb(231, 231, 177);
+            font-size: 30px; 
+            text-transform: uppercase;
+        }
+        .desc > p {
+             font-size: 30px;
+
+        }
+
+        .date{
+            background-color: rgba(133, 2, 2, 0.7);
+            width: 30%;
+            color: white;
+            font-size: 20px;
+            position: absolute;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div style="display:flex">
+    <script>
+
+        images =["3.jpeg","4.jpeg" , "5.jpeg"]
+        titles=[ "annual function ", "workshop" , "guest"]
+        intro =["this is a fucntion used to happen in school" , "workshops used to happen in college dazeee" , "guest irritates me"]
+        dates =["23 Nov", "10 Dec" , "22 feb"]
+        for(i=0;i<3;i++)
+        {
+        var card= ' <div class="card">' 
+        +'<img src="images/'+images[i]+'">'
+        
+         + '<div class="desc">'
+           + '<h2>'+ titles[i]+'</h2>'
+            +'<p>'+intro+'</p></div></div>'
+          document.write(card);
+         }
+    </script>
+    </div>
+    <div id="display" >
+
+    </div>
+    <script>
+        d=new Date();
+        hour = d.getHour();
+        
+
+    </script>
+
+</body>
+</html>
